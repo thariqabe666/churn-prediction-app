@@ -53,6 +53,5 @@ if st.sidebar.button('Predict Churn'):
     else:
         st.success("The customer is likely to stay! 😊")
 
-st.write(f"**Confidence:** {prediction_proba[0][prediction[1]]*100:.2f}% for churn, {prediction_proba[0][0]*100:.2f}% for no churn")  # Display the confidence levels
-st.write('Prediction Probabilities:', prediction_proba)  # Show the prediction probabilities
-
+    st.write(f"**Confidence:** {prediction_proba[0][prediction[0]]*100:.2f}%")
+    st.write("Prediction Probabilities:", prediction_proba)
